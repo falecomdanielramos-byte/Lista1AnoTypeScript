@@ -1,0 +1,24 @@
+{
+  "name": "lista1anotypescript",
+  "version": "1.0.0",
+  "description": "Lista do 1ºAno de Programação em TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falecomdanielramos-byte/Lista1AnoTypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falecomdanielramos-byte/Lista1AnoTypeScript/issues"
+  },
+  "homepage": "https://github.com/falecomdanielramos-byte/Lista1AnoTypeScript#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
