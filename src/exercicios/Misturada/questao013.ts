@@ -2,7 +2,7 @@
 // deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5.
 // Fórmula para o cálculo da média final é:
 
-export function questao14():void{
+export function questao13():void{
     let no1:number=Number(prompt("Informe a 1º Nota: "))
     let no2:number=Number(prompt("Informe a 2º Nota: "))
     let no3:number=Number(prompt("Informe a 3º Nota: "))
