@@ -4,7 +4,7 @@
 // todas as formas de conversões
 
 
-export function QuestADD04(){
+export function QuestADD04():void{
 
     let mensagem:number=0
 
