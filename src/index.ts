@@ -13,6 +13,7 @@ import { questao14 as quest14C } from "./exercicios/Misturada/questao14.js";
 
 //Questão adicional
 import { QuestADD04 } from "./exercicios/Misturada/QuestADD04.js";
+import { Q6Modularizada } from "./exercicios/Modularizacao/Q6Modularizada.js";
 
 
 
@@ -46,3 +47,4 @@ document.getElementById("bt14")?.addEventListener("click",quest14C)
 
 //Questão add
 document.getElementById("bt0.4")?.addEventListener("click",QuestADD04)
+document.getElementById("bt0.15")?.addEventListener("click",Q6Modularizada)
