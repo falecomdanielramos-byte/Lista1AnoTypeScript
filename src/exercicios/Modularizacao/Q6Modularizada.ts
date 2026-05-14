@@ -3,26 +3,42 @@
 // Fahrenheit e C a temperatura em Celsius.
 // todas as formas de conversões
 
-import { soma } from "./soma.js";
-import { subtracao } from "./subtracao.js";
-import { multiplicacao } from "./multi.js";
+import { CparaF } from "./C+.js";
+import { FparaC } from "./F+.js";
+import { KparaC } from "./K+.js";
+import { CparaK } from "./CpK.js";
 
 export function Q6Modularizada():void{
-    let nu1:number=Number(prompt("Informe um número: "))
-    let nu2:number=Number(prompt("Informe outro número: "))
+    
 
-    let op:number=Number(prompt("Informe qual opção de operações: \n (1-Soma)\n(2-Subtração)\n(3-Multiplicação)\n(4-Divisão)"))
+    let op:number=Number(prompt("Informe qual opção de operações:\n(1-Celsius para Fahrenheit)\n(2-Fahrenheit para Celsius)\n(3-Kelvin para Celsius)\n(4-Celsius para Kelvin)"))
 
     if(op == 1){
-        let resultado:number = soma(nu1,nu2)
-        window.alert(`A Soma dos números foi: ${resultado}` )
+        let Celsius:number=Number(prompt("Informe o valor de Celsius para a conversão para Fahrenheit: "))
+
+        let resultado:number = CparaF(Celsius)
+        window.alert(`A conversão de Celsius: ${Celsius} para farenheit foi: ${resultado.toFixed(3)}` )
     }
     else if(op == 2){
-        let resultado:number = subtracao(nu1,nu2)
-        window.alert(`A Subtração dos números foi: ${resultado}`)
+        let Fahrenheit:number=Number(prompt("Informe o valor de fahrenheit para conversão para Celsius"))
+
+        let resultado:number = FparaC(Fahrenheit)
+        window.alert(`A conversão de farenheit: ${Fahrenheit} para Celsius foi: ${resultado.toFixed(3)}`)
     }
     else if(op == 3){
-        let resultado:number = multiplicacao(nu1,nu2)
-        window.alert(`A multiplicação dos números foi: ${resultado}`)
+        let Kelvin:number=Number(prompt("Informe o valor de kelvin para a conversão para Celsius: "))
+
+        let resultado:number = KparaC(Kelvin)
+        window.alert(`A conversão de Kelvin: ${Kelvin} para Celsius foi:${resultado.toFixed(3)}`)
+    
+    }
+    else if(op == 4){
+        let celsius:number=Number(prompt("Informe o valor de Celsius para conversão para Kelvin: "))
+
+        let resultado:number = CparaK(celsius)
+        window.alert(`A conversão de Celsius: ${celsius} para Kelvin foi: ${resultado.toFixed(3)}`)
+    }
+    else{
+        alert(`Calculo não encontrado tente novamente!.`)
     }
 }
